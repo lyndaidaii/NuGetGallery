@@ -211,6 +211,12 @@ namespace NuGetGallery.Configuration
         int AppInsightsHeartbeatIntervalSeconds { get; set; }
 
         /// <summary>
+        /// The tenant key used for OneDS. This is a Microsoft internal system similar to Application Insights.
+        /// Because it is internal, this setting is not useful if used outside of Microsoft.
+        /// </summary>
+        string OneDSTenantKey { get; set; }
+
+        /// <summary>
         /// Gets the protocol-independent site root
         /// </summary>
         string SiteRoot { get; set; }

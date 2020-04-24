@@ -116,8 +116,8 @@ $(function () {
         });
     }
 
-    function emitAIMetric(metricName) {
-        window.nuget.sendAiMetric(metricName, 1, {});
+    function emitMetric(metricName) {
+        window.nuget.sendMetric(metricName, 1, {});
     }
 
     function updateStats() {
